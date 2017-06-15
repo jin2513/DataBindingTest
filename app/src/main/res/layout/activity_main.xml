@@ -6,10 +6,6 @@
         <variable
             name="activity"
             type="com.example.hub_dev_1.databindingtest.MainActivity" />
-
-        <variable
-            name="friend"
-            type="com.example.hub_dev_1.databindingtest.Friend" />
     </data>
 
     <LinearLayout
@@ -18,24 +14,27 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="@{friend.firstName}" />
-
-        <TextView
-            android:id="@+id/tv_test2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{friend.lastName}" />
-
         <Button
+            android:id="@+id/bt_ob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{activity::onButtonClick}"
-            android:text="button test" />
+            android:text="Observale test" />
+
+        <Button
+            android:id="@+id/bt_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{activity::onButtonClick}"
+            android:text="Observale Field test" />
+
+        <Button
+            android:id="@+id/bt_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{activity::onButtonClick}"
+            android:text="RecyclerView Test" />
+
     </LinearLayout>
 
 </layout>

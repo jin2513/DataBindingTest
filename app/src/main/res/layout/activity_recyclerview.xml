@@ -5,7 +5,7 @@
 
         <variable
             name="activity"
-            type="com.example.hub_dev_1.databindingtest.MainActivity" />
+            type="com.example.hub_dev_1.databindingtest.RecyclerViewActivity" />
     </data>
 
     <LinearLayout
@@ -14,26 +14,10 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/bt_ob"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="@{activity::onButtonClick}"
-            android:text="Observale test" />
-
-        <Button
-            android:id="@+id/bt_field"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="@{activity::onButtonClick}"
-            android:text="Observale Field test" />
-
-        <Button
-            android:id="@+id/bt_recyclerView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="@{activity::onButtonClick}"
-            android:text="RecyclerView Test" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 

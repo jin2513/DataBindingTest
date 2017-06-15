@@ -5,29 +5,28 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.hub_dev_1.databindingtest.databinding.ActivityObservableClickBinding;
+import com.example.hub_dev_1.databindingtest.databinding.ActivityObservableBinding;
 
 /**
  * Created by hub_dev_1 on 2017-06-15.
  */
 
-public class ObservableClickActivity extends AppCompatActivity {
+public class ObservableActivity extends AppCompatActivity {
 
-    ActivityObservableClickBinding binding;
-    Friend friend;
+    ActivityObservableBinding binding;
+    User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_observable);
-        friend = new Friend("firstName", "lastName");
+        user = new User("firstName", "lastName", 0);
         binding.setActivity(this);
-        binding.setFriend(friend);
+        binding.setUser(user);
     }
 
     public void onButtonClick(View view) {
-        friend.setFirstName("firstName Click");
-        friend.setLastName("lastName Click");
+        user.setDisplayName("displayName");
     }
 
 }

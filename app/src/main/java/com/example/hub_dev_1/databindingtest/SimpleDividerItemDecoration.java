@@ -1,12 +1,10 @@
-package gun0912.databinding.common;
+package com.example.hub_dev_1.databindingtest;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
-import gun0912.databinding.R;
 
 
 /**

@@ -5,11 +5,11 @@
 
         <variable
             name="activity"
-            type="com.example.hub_dev_1.databindingtest.ObservableClickActivity" />
+            type="com.example.hub_dev_1.databindingtest.ObservableActivity" />
 
         <variable
-            name="friend"
-            type="com.example.hub_dev_1.databindingtest.Friend" />
+            name="user"
+            type="com.example.hub_dev_1.databindingtest.User" />
     </data>
 
     <LinearLayout
@@ -22,12 +22,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="@{friend.firstName}" />
+            android:text="@{user.firstName}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{friend.lastName}" />
+            android:text="@{user.lastName}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.displayName ?? user.firstName}" />
 
         <Button
             android:layout_width="wrap_content"
