@@ -5,11 +5,11 @@
 
         <variable
             name="activity"
-            type="com.example.hub_dev_1.databindtest.MainActivity" />
+            type="com.example.hub_dev_1.databindingtest.MainActivity" />
 
         <variable
             name="friend"
-            type="com.example.hub_dev_1.databindtest.Friend" />
+            type="com.example.hub_dev_1.databindingtest.Friend" />
     </data>
 
     <LinearLayout
@@ -23,13 +23,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="test1" />
+            android:text="@{friend.firstName}" />
 
         <TextView
             android:id="@+id/tv_test2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="test2" />
+            android:text="@{friend.lastName}" />
 
         <Button
             android:layout_width="wrap_content"

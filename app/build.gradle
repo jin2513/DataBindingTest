@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.example.hub_dev_1.databindtest"
+        applicationId "com.example.hub_dev_1.databindingtest"
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
@@ -19,7 +19,7 @@ android {
     }
 
     dataBinding {
-        enabled = true
+        enabled = true;
     }
 }
 

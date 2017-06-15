@@ -1,11 +1,12 @@
-package com.example.hub_dev_1.databindtest;
+package com.example.hub_dev_1.databindingtest;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
-import com.example.hub_dev_1.databindtest.databinding.ActivityMainBinding;
+import com.example.hub_dev_1.databindingtest.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,10 +23,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        friend.setFirstName("firstName");
-        friend.setLastName("lastName");
+        Log.e("test", "click");
+        friend.setFirstName("firstName Click");
+        friend.setLastName("lastName Click");
     }
-
-
 
 }

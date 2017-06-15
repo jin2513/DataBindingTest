@@ -1,4 +1,4 @@
-package com.example.hub_dev_1.databindtest;
+package com.example.hub_dev_1.databindingtest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.hub_dev_1.databindtest", appContext.getPackageName());
+        assertEquals("com.example.hub_dev_1.databindingtest", appContext.getPackageName());
     }
 }

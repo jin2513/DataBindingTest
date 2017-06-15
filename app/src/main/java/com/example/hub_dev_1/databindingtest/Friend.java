@@ -1,4 +1,4 @@
-package com.example.hub_dev_1.databindtest;
+package com.example.hub_dev_1.databindingtest;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -28,11 +28,11 @@ public class Friend extends BaseObservable {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-        notifyPropertyChanged(com.example.hub_dev_1.databindtest.BR.firstName);
+        notifyPropertyChanged(com.example.hub_dev_1.databindingtest.BR.firstName);
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-        notifyPropertyChanged(com.example.hub_dev_1.databindtest.BR.lastName);
+        notifyPropertyChanged(com.example.hub_dev_1.databindingtest.BR.lastName);
     }
 }

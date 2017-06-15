@@ -1,4 +1,4 @@
-package com.example.hub_dev_1.databindtest;
+package com.example.hub_dev_1.databindingtest;
 
 import org.junit.Test;
 
