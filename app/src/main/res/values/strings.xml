@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DataBindTest</string>
+    <string formatted="false" name="nameFormat">이름은 %s 이고, 성은 %s 입니다.</string>
+</resources>
